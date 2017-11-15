@@ -1,0 +1,29 @@
+.nav{
+	@media(min-width:768px){
+		float:right;
+	}
+}
+
+.nav a {
+	@include text(initial, auto, 700, $color-link);
+	@extend %links;
+	@extend %navItems;
+	display: block;
+	border-bottom: 2px solid $lightGrey;
+	&:hover {
+		color: $color-linkHover;
+		background: $background-linkHover;
+	}
+	
+	@include tablet {
+		display: inline-block;
+		border-bottom: none;
+		max-width: 125px;
+	}
+}
+
+.nav li {
+	@include tablet {
+		display: inline-block;
+	}
+}

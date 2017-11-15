@@ -1,0 +1,13 @@
+.img--avatar {
+	@extend %imgs;
+	margin: 15px auto;
+	border-radius: 50%;
+}
+
+.img--frame {
+	@extend %imgs;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid $mediumGrey;
+}

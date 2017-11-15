@@ -1,0 +1,32 @@
+.headline--primary, .headline--secondary {
+	@include text(auto, auto, bolder, $color-heading);
+	@extend %headlines;
+}
+
+.headline--primary {
+	padding-left: 40px;
+}
+
+.headline--secondary {
+	padding-left: 20px;
+}
+
+p {
+	@include text(auto, 1.35em, 400, $color-p);
+	font-family: $plainText; 
+	width: 90%;
+	margin: auto;
+}
+
+.link {
+	@include text(initial, auto, bold, $black);
+	@extend %links;
+	&:hover {
+		color: $lightGreen;
+	}
+}
+
+.blockquote {
+	@include text(1.5em, auto, 300, $color-heading);
+	font-style: italic;
+}

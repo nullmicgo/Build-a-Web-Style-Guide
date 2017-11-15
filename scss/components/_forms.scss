@@ -1,0 +1,49 @@
+.form {
+	@include tablet {
+		padding-top: 20px;
+	}
+}
+
+.form__label--hidden {
+	display: block;
+	opacity: 0;
+	height: 0;
+}
+
+.form__input {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+	border: none;
+	border-bottom: 5px solid $mediumGrey;
+}
+
+.form .btn--default {
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	padding: 15px;
+	background: $lightGreen;
+	color: $nearWhite;
+	border-radius: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 3px 3px 3px $gossamer;
+	transition: all .3s;
+	&:hover {
+		color: $black;
+		background: $darkTurq;
+	}
+	
+	@include tablet {
+		max-width: 100%;
+	}
+}
+
+.blockquote {
+	@include tablet {
+		border-left: 10px solid $mediumGrey;
+		padding-left: 25px;
+	}
+}

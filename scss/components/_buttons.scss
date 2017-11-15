@@ -1,0 +1,39 @@
+$buttonsMapping: (
+	default	: $lightGreen,
+	success	: $blue,
+	error		: $red,
+	warning	: $black,
+	info		: $pink
+);
+
+@each $el, $color in $buttonsMapping {
+	.btn--#{$el} {
+		display: block;
+		text-transform: uppercase;
+		color: $nearWhite;
+		background: #{$color};
+		width: 95%;
+		padding: 10px;
+		margin: 10px auto;
+		opacity: 0.8;
+		transition: all .3s;
+		@extend %radBox;
+		
+		&:hover {
+			opacity: 1;
+			color: $black;
+		}
+		
+		@include tablet {
+			display: inline-block;
+			flex: 5;
+			max-width: 125px;
+		}
+	}
+}
+
+.grid__col--12 {
+	@include tablet {
+		@include flexed(flex, row wrap, space-around);
+	}
+}

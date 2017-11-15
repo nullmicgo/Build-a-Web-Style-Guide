@@ -1,0 +1,44 @@
+//@mixin flexed($flex, $wrap, $justify)
+.grid__row {
+	@include tablet {
+		@include flexed(flex, row wrap, space-around);
+	}
+}
+	
+@for $i from 1 through 12 {
+	.grid__col--#{$i} {	
+		margin: 25px 10px;
+		padding: 15px;
+		overflow: hidden;
+		@include tablet { 
+			flex: #{$i};
+			max-width: calc((#{$i}/12)*100%);
+		}
+	}	
+}     
+
+$myMap: (
+	1: $lightGreen,
+	2: $black,
+	3: $navy,
+	4: $blue,
+	5: $royal,
+	6: $dodger,
+	7: $aqua,
+	8: $sky,
+	9: $indigo,
+	10: $darkTurq,
+	11: $blue,
+	12: $aqua
+);
+
+@each $num, $color in $myMap {
+	.grid__col--#{$num}.theme__poly {
+		background: #{$color};
+		@extend %radBox;
+	}
+}
+	
+.centered {
+	text-align: center;
+}

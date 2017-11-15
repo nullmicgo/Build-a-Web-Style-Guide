@@ -1,0 +1,10 @@
+hr {
+	width: 90%;
+	max-width: 985px;
+	height: 2px;
+	background-color: $color-hr;
+	border: none;
+	@include tablet {
+		width: 100%;
+	}
+}
