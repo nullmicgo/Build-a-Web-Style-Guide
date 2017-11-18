@@ -1,6 +1,6 @@
 $buttonsMapping: (
-	default	: $lightGreen,
-	success	: $blue,
+	default	: $lightBlue,
+	success	: $lightGreen,
 	error		: $red,
 	warning	: $black,
 	info		: $pink
@@ -10,15 +10,15 @@ $buttonsMapping: (
 	.btn--#{$el} {
 		display: block;
 		text-transform: uppercase;
-		color: $nearWhite;
+		color: white;
 		background: #{$color};
 		width: 95%;
 		padding: 10px;
 		margin: 10px auto;
-		opacity: 0.8;
+		border-radius:10px;
 		transition: all .3s;
-		@extend %radBox;
-		
+		font-size:10px;
+		line-height:20px;
 		&:hover {
 			opacity: 1;
 			color: $black;

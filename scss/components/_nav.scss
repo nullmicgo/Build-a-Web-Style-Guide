@@ -10,6 +10,7 @@
 	@extend %navItems;
 	display: block;
 	border-bottom: 2px solid $lightGrey;
+	border-radius: 10px;
 	&:hover {
 		color: $color-linkHover;
 		background: $background-linkHover;
