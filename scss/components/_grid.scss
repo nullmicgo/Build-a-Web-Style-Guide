@@ -17,24 +17,30 @@
 	}	
 }     
 
+
+
+
+
 $myMap: (
 	1: $lightGreen,
 	2: $black,
-	3: $navy,
-	4: $blue,
-	5: $royal,
-	6: $dodger,
-	7: $aqua,
+	3: $g3color,
+	4: $g4color,
+	5: $g5color,
+	6: $g6color,
+	7: $orangered,
 	8: $sky,
 	9: $indigo,
 	10: $darkTurq,
 	11: $blue,
-	12: $aqua
+	12: $g12color
 );
 
 @each $num, $color in $myMap {
-	.grid__col--#{$num}.theme__poly {
+	.grid__col--#{$num}.theme__colors {
 		background: #{$color};
+				border-radius: 10px;
+
 		@extend %radBox;
 	}
 }
