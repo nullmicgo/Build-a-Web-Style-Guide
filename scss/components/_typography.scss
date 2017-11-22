@@ -1,3 +1,5 @@
+
+
 .headline--primary, .headline--secondary {
 	@include text(auto, auto, bolder, $color-heading);
 	@extend %headlines;
@@ -5,6 +7,7 @@
 
 .headline--primary {
 	padding-left: 40px;
+	color:$lightGreen;
 }
 
 .headline--secondary {
@@ -20,8 +23,10 @@ p {
 
 .link {
 	@include text(initial, auto, bold, $black);
+	color: $lightBlue;
 	@extend %links;
-	&:hover {
+	&:hover 
+	{
 		color: $lightGreen;
 	}
 }

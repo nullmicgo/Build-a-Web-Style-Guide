@@ -16,7 +16,7 @@
 	margin: 10px auto;
 	padding: 10px;
 	border: none;
-	border-bottom: 5px solid $mediumGrey;
+	border-bottom: 5px solid $lightGreen;
 }
 
 .form .btn--default {
@@ -24,7 +24,7 @@
 	width: 100%;
 	margin: 20px auto;
 	padding: 15px;
-	background: $lightGreen;
+	background: $lightBlue;
 	color: $nearWhite;
 	border-radius: 2px;
 	font-weight: bold;
@@ -43,7 +43,7 @@
 
 .blockquote {
 	@include tablet {
-		border-left: 10px solid $mediumGrey;
+		border-left: 10px solid $lightGreen;
 		padding-left: 25px;
 	}
 }

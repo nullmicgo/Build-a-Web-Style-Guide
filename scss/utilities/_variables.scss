@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Tangerine');
+
+
 // Colors
 // Break Points
 // Fonts Setting
@@ -77,9 +80,12 @@ $desktop   : '(min-width: 1024px)';
 
 
 // Global Fonts Setting
-$stack-roboto     : 'Open Sans', serif;
-$stack-barrio     : 'Josefin Slab', serif;
-$stack-raleway    : 'Tangerine', serif;
+$stack-roboto: 'Open Sans', sans-serif;
+$stack-barrio: 'Josefin Slab', serif;
+$stack-raleway: 'Tangerine', cursive;
+
+
+
 
 // Functional Font Variables
 $headings    : $stack-raleway;
